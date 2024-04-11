@@ -1,16 +1,16 @@
 @font-face {
     font-family: Tinkoff-1;
-    src: url('fonts/TinkoffSans-Regular.ttf');
+    src: url('TinkoffSans-Regular.ttf');
 }
 
 @font-face {
     font-family: Tinkoff-2;
-    src: url('fonts/TinkoffSans-Medium.ttf');
+    src: url('TinkoffSans-Medium.ttf');
 }
 
 @font-face {
     font-family: Tinkoff-3;
-    src: url('fonts/TinkoffSans-Bold.ttf');
+    src: url('TinkoffSans-Bold.ttf');
 }
 
 h1 {
@@ -22,7 +22,7 @@ h1 {
 }
 
 body {
-    background-image: url('img/background.jpg');
+    background-image: url('background.jpg');
     background-size: cover; /* Это свойство позволяет изображению занимать всю доступную область */
     background-repeat: no-repeat;
 }
