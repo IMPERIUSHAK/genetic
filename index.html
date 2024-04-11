@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генетический алгоритм</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header"><h1>Генетический код</h1></div>
+    <div class="back">
+        <p></p>
+        <a class="back-link" href="#" target="_self"><b>← На главную</b></a>
+        <p></p>
+    </div>
+    <div id="center_canvas"><canvas id="plank" width="700px" height="500px"></canvas></div>
+
+    <span id="tools"><br>укажите количество популяции</span><input name = "set_population" type="range" min="5" max="200" id="population" value="27"><label id="set_population">7</label>
+    <span id="tools"><br>укажите количество поколений</span><input name = "gen" type="range" min="5" max="200" id="gen" value="25"><label id="set_gen">5</label>
+    <span id="tools"><br>Процент мутации</span><input name = "mutation" type="range" min="0" max="100" id="mutation" value="20"><label id="set_mutation">20</label>
+    
+    <input type="submit" name="submit" value="готово" id="submt">
+    <script type="text/javascript" src="input.js"></script>
+    <script type="text/javascript" src="genetic_alg.js"></script>
+    <script type="text/javascript" src="mouse_events.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+</body>
+</html>

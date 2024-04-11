@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Tinkoff-1;
+    src: url('fonts/TinkoffSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Tinkoff-2;
+    src: url('fonts/TinkoffSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: Tinkoff-3;
+    src: url('fonts/TinkoffSans-Bold.ttf');
+}
+
+h1 {
+    font-family: Tinkoff-3;
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+    -webkit-text-stroke: 1px #000000; /* Толщина и цвет обводки */
+}
+
+body {
+    background-image: url('img/background.jpg');
+    background-size: cover; /* Это свойство позволяет изображению занимать всю доступную область */
+    background-repeat: no-repeat;
+}
+#plank {
+    padding: 0px;
+    border: 4px solid black;
+    border-radius: 5%;
+    background-color: gray;
+}
+
+#line{
+    width: 10px;
+    background-color: none;
+}
+#center_canvas{
+    display: flex;
+    margin-left: 20%; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    width: 700px;
+    border-radius: 5%;
+    box-shadow: 19px 15px 17px rgb(204, 204, 172);
+}
+.back {
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 400px;
+}
+
+.back-link {
+    position: relative;
+    list-style: none;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Tinkoff-1;
+}
+
+.back-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: width .3s ease-in;
+}
+
+.back-link:hover::after {
+    width: 100%;
+    background-color: #ffffff;
+    top: 100%;
+}
+#tools{
+    color: #fff;
+}
+#set_population, #set_gen, #set_mutation{
+    color: #fff;
+}
